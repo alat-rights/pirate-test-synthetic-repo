@@ -20,7 +20,7 @@ class BankAccount:
             print("Deposit amount must be positive.")
 
     def withdraw(self, amount):
-        'This is a single quote docstring'
+        "This is a single line docstring"
         if amount > 0:
             if amount <= self.balance:
                 self.balance -= amount
@@ -31,11 +31,13 @@ class BankAccount:
         else:
             print("Withdrawal amount must be positive.")
 
+        return "This is a modification to the program."
+
     def get_balance(self):
-        '''
+        """
         This is a big
         multi-line docstring with "quotes" inside it
-        '''
+        """
         return self.balance
 
     def calculate_interest(self, rate=0.01):  # Simple interest for one period
