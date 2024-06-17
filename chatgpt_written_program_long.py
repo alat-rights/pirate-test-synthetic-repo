@@ -1,10 +1,17 @@
 class BankAccount:
     def __init__(self, owner, initial_balance=0):
+        """
+        This is a
+        multi
+        line
+        docstring
+        """
         self.owner = owner
         self.balance = initial_balance
         self.transactions = []
 
     def deposit(self, amount):
+        "This is a single line docstring"
         if amount > 0:
             self.balance += amount
             self.transactions.append(f"Deposited ${amount}")
@@ -13,6 +20,7 @@ class BankAccount:
             print("Deposit amount must be positive.")
 
     def withdraw(self, amount):
+        'This is a single quote docstring'
         if amount > 0:
             if amount <= self.balance:
                 self.balance -= amount
@@ -24,15 +32,21 @@ class BankAccount:
             print("Withdrawal amount must be positive.")
 
     def get_balance(self):
+        '''
+        This is a big
+        multi-line docstring with "quotes" inside it
+        '''
         return self.balance
 
     def calculate_interest(self, rate=0.01):  # Simple interest for one period
+        "Btw I had ChatGPT write this program for me"
         interest = self.balance * rate
         self.balance += interest
         self.transactions.append(f"Interest added: ${interest:.2f}")
         return interest
 
     def show_transactions(self):
+        "All done!"
         for transaction in self.transactions:
             print(transaction)
 
