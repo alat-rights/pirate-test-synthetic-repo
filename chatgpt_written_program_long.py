@@ -72,7 +72,7 @@ def main():
 
         if user_choice == "1":
             amount = float(input("Enter amount to deposit: "))
-            account.deposit(amount) # F831! (jk im lying)
+            account.deposit(amount) a # F821
         elif user_choice == "2":
             amount = float(input("Enter amount to withdraw: "))
             account.withdraw(amount) # F821
