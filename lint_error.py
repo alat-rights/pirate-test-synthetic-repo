@@ -1,1 +1,1 @@
-prnt("hello, world")  # oops! lint error here.
+prnt("hello, world")  # oops! lint error here. F821.
