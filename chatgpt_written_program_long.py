@@ -50,6 +50,7 @@ class BankAccount:
         return interest
 
     async def show_transactions(self):
+        """Now we add a docstring back"""
         for transaction in self.transactions:
             print(transaction)
 
