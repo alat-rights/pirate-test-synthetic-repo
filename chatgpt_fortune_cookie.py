@@ -1,3 +1,4 @@
+import random
 
 def get_fortune():
     fortunes = [
@@ -8,7 +9,7 @@ def get_fortune():
         "Someone has Googled you recently.",
         "You will receive pleasant news by mail."
     ]
-    return random.choice(fortunes)  # F821
+    return random.choice(fortunes)
 
 
 # Generate and display a random fortune

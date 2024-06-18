@@ -1,6 +1,6 @@
 import asyncio
 
-class BankAccount: # E302
+class BankAccount:
     def __init__(self, owner, initial_balance=0):
         """
         This is a
@@ -57,11 +57,12 @@ class BankAccount: # E302
 
 def main():
     account_name = input("Enter the account holder's name: ")
-    accoun = BankAccount(account_name)  # F841
+    account = BankAccount(account_name)
 
     while True:
         print("\nOptions:")
         print("1. Deposit money")
+        print("2. Withdraw money")
         print("3. Check balance")
         print("4. Add interest")
         print("5. Show transactions")
@@ -71,17 +72,17 @@ def main():
 
         if user_choice == "1":
             amount = float(input("Enter amount to deposit: "))
-            account.deposit(amount) # F821
+            account.deposit(amount)
         elif user_choice == "2":
             amount = float(input("Enter amount to withdraw: "))
-            account.withdraw(amount) # F821
+            account.withdraw(amount)
         elif user_choice == "3":
-            print(f"Current balance: ${account.get_balance()}") #F821
+            print(f"Current balance: ${account.get_balance()}")
         elif user_choice == "4":
             rate = float(input("Enter the interest rate (as a decimal): "))
-            account.calculate_interest(rate)  # F821
+            account.calculate_interest(rate)
         elif user_choice == "5":
-            asyncio.run(account.show_transactions()) # F821
+            asyncio.run(account.show_transactions())
         elif user_choice == "6":
             print("Exiting program.")
             break
