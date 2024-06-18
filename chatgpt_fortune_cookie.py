@@ -8,7 +8,7 @@ def get_fortune():
         "Someone has Googled you recently.",
         "You will receive pleasant news by mail."
     ]
-    return random.choice(fortunes)
+    return random.choice(fortunes)  # F821
 
 
 # Generate and display a random fortune
