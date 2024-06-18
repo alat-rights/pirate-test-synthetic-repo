@@ -57,7 +57,7 @@ class BankAccount:
 
 def main():
     account_name = input("Enter the account holder's name: ")
-    account = BankAccount(account_name)
+    accoun = BankAccount(account_name)
 
     while True:
         print("\nOptions:")

@@ -1,4 +1,3 @@
-import random
 
 def get_fortune():
     fortunes = [
@@ -10,6 +9,7 @@ def get_fortune():
         "You will receive pleasant news by mail."
     ]
     return random.choice(fortunes)
+
 
 # Generate and display a random fortune
 print(get_fortune())
