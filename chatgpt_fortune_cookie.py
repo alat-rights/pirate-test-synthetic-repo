@@ -1,6 +1,7 @@
 import random
 
 def get_fortune():
+    """A new docstring!"""
     fortunes = [
         "You will discover an unexpected treasure.",
         "Now is a good time to try something new.",
