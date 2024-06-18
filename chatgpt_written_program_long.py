@@ -1,3 +1,5 @@
+import asyncio
+
 class BankAccount:
     def __init__(self, owner, initial_balance=0):
         """
@@ -47,8 +49,7 @@ class BankAccount:
         self.transactions.append(f"Interest added: ${interest:.2f}")
         return interest
 
-    def show_transactions(self):
-        "All done!"
+    async def show_transactions(self):
         for transaction in self.transactions:
             print(transaction)
 
@@ -80,7 +81,7 @@ def main():
             rate = float(input("Enter the interest rate (as a decimal): "))
             account.calculate_interest(rate)
         elif user_choice == "5":
-            account.show_transactions()
+            asyncio.run(account.show_transactions())
         elif user_choice == "6":
             print("Exiting program.")
             break
