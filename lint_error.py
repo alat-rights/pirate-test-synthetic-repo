@@ -1,1 +1,1 @@
-prnt("hello, world")
+prnt("hello, world")  # oops! lint error here.
