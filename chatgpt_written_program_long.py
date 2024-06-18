@@ -62,7 +62,6 @@ def main():
     while True:
         print("\nOptions:")
         print("1. Deposit money")
-        print("2. Withdraw money")
         print("3. Check balance")
         print("4. Add interest")
         print("5. Show transactions")
@@ -72,7 +71,7 @@ def main():
 
         if user_choice == "1":
             amount = float(input("Enter amount to deposit: "))
-            account.deposit(amount) a # F821
+            account.deposit(amount) # F821
         elif user_choice == "2":
             amount = float(input("Enter amount to withdraw: "))
             account.withdraw(amount) # F821
