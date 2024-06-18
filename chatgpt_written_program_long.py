@@ -13,7 +13,7 @@ class BankAccount:
         self.transactions = []
 
     def deposit(self, amount):
-        "This is a single line docstring"
+        "This is a single line "
         if amount > 0:
             self.balance += amount
             self.transactions.append(f"Deposited ${amount}")
