@@ -20,7 +20,7 @@ class BankAccount:
         else:
             print("Deposit amount must be positive.")
 
-    def withdraw(self, amount):
+    def withdraw(self, amount) -> str:
         "This is a single line docstring"
         if amount > 0:
             if amount <= self.balance:
@@ -34,14 +34,14 @@ class BankAccount:
 
         return "This is a modification to the program."
 
-    def get_balance(self):
+    def get_balance(self) -> int:
         """
         This is a big
         multi-line docstring with "quotes" inside it
         """
         return self.balance
 
-    def calculate_interest(self, rate=0.01):  # Simple interest for one period
+    def calculate_interest(self, rate=0.01) -> float:  # Simple interest for one period
         "Btw I had ChatGPT write this program for me"
         interest = self.balance * rate
         self.balance += interest
